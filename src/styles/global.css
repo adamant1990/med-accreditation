@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    background:#f6f9fc;
+
+    color:#1f2937;
+
+}
+
+
+
+.container {
+
+    max-width:1200px;
+
+    margin:0 auto;
+
+    padding:0 20px;
+
+}
+
+
+
+section {
+
+    padding:90px 0;
+
+}
+
+
+/* Все заголовки сайта */
+
+h1,
+h2,
+h3 {
+
+    color:#111827;
+
+    font-weight:700;
+
+}
+
+
+
+h1 {
+
+    font-size:52px;
+
+}
+
+
+
+h2 {
+
+    font-size:40px;
+
+}
+
+
+
+h3 {
+
+    font-size:22px;
+
+}
+
+
+
+p {
+
+    color:#4b5563;
+
+    line-height:1.7;
+
+}
+
+
+
+button {
+
+    font-family:inherit;
+
+    transition:.3s;
+
+}
+
+
+button:hover {
+
+    cursor:pointer;
+
+}
