@@ -1,5 +1,5 @@
 import "./../styles/hero.css";
-import { FaCheckCircle } from "react-icons/fa";
+import { FaCheckCircle, FaWhatsapp, FaTelegramPlane, FaShieldAlt } from "react-icons/fa";
 
 function Hero() {
   return (
@@ -7,7 +7,7 @@ function Hero() {
       <div className="hero-container">
         <div className="hero-left">
           <span className="badge">
-            ✓ Работаем по всей России
+            <FaShieldAlt /> Работаем по всей России
           </span>
 
           <h1>
@@ -18,8 +18,8 @@ function Hero() {
 
           <p>
             Помогаем врачам, фельдшерам, медицинским сестрам и другим
-            специалистам пройти аккредитацию быстро, спокойно и без лишних
-            сложностей.
+            специалистам пройти аккредитацию спокойно, грамотно и без лишней
+            бюрократии.
           </p>
 
           <div className="hero-buttons">
@@ -29,7 +29,8 @@ function Hero() {
               rel="noopener noreferrer"
               className="primary-btn"
             >
-              💬 WhatsApp
+              <FaWhatsapp />
+              Получить консультацию
             </a>
 
             <a
@@ -38,40 +39,48 @@ function Hero() {
               rel="noopener noreferrer"
               className="secondary-btn"
             >
-              ✈️ Telegram
+              <FaTelegramPlane />
+              Написать в Telegram
             </a>
           </div>
 
           <div className="hero-features">
             <div>
               <FaCheckCircle />
-              Бесплатная консультация
+              Бесплатная первичная консультация
             </div>
 
             <div>
               <FaCheckCircle />
-              Проверка документов
+              Проверка документов перед подачей
             </div>
 
             <div>
               <FaCheckCircle />
-              Полное сопровождение
+              Сопровождение на каждом этапе
             </div>
           </div>
         </div>
 
         <div className="hero-right">
-          <div className="doctor-card">
-            <div className="doctor-circle">
-              👩‍⚕️
+          <div className="doctor-visual">
+            <div className="doctor-image" role="img" aria-label="Медицинский специалист на консультации" />
+
+            <div className="doctor-floating-card doctor-floating-card--top">
+              <span className="floating-icon"><FaShieldAlt /></span>
+              <div>
+                <strong>Надёжное сопровождение</strong>
+                <span>От консультации до результата</span>
+              </div>
             </div>
 
-            <h3>Профессиональная помощь</h3>
-
-            <p>
-              Подготовим документы и сопроводим до успешного прохождения
-              аккредитации.
-            </p>
+            <div className="doctor-floating-card doctor-floating-card--bottom">
+              <span className="floating-check"><FaCheckCircle /></span>
+              <div>
+                <strong>Документы проверены</strong>
+                <span>Перед подачей на аккредитацию</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
